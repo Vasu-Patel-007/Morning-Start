@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mainpage">
+
+<!--    <com.google.android.material.appbar.AppBarLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        tools:ignore="MissingConstraints">-->
+<!--        <com.google.android.material.appbar.MaterialToolbar-->
+<!--            android:id="@+id/topbar"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:title="Welcome to Creme Pie"-->
+<!--            app:titleTextColor="@color/white"-->
+<!--            app:menu="@menu/nav_bar">-->
+
+<!--        </com.google.android.material.appbar.MaterialToolbar>-->
+<!--    </com.google.android.material.appbar.AppBarLayout>-->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <Button
+        android:id="@+id/main_breakfast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Breakfast"
+        android:layout_marginTop="250sp"
+        android:layout_gravity="center"/>
+    <Button
+        android:id="@+id/main_coffee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coffee"
+        android:layout_gravity="center"/>
+    <Button
+        android:id="@+id/main_pastry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pastry"
+        android:layout_gravity="center"/>
+<!--    <Button-->
+<!--        android:id="@+id/main_page_add_to_cart"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Add To Cart"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginTop="150sp"/>-->
+</LinearLayout>
+</RelativeLayout>

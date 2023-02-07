@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pastry">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/pastry_recycle"
+        android:layout_width="150dp"
+        android:layout_height="650dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/creme_pie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="32dp"
+        android:text="Boston Creme Pie"
+        app:layout_constraintBottom_toTopOf="@+id/rapberry_pie"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/rapberry_pie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="32dp"
+        android:text="Raspberry Pie"
+        app:layout_constraintBottom_toTopOf="@+id/danish"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/danish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="32dp"
+        android:text="Danish"
+        app:layout_constraintBottom_toTopOf="@+id/strudel"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/strudel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="32dp"
+        android:text="Strudel"
+        app:layout_constraintBottom_toTopOf="@+id/cannoli"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/cannoli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="32dp"
+        android:text="Cannoli"
+        app:layout_constraintBottom_toTopOf="@+id/bear_claw"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bear_claw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="272dp"
+        android:text="Bear Claw"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/pastry_item_name"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="216dp"
+        android:layout_marginEnd="60dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/pastry_image"
+        android:layout_width="200sp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/pastry_price"
+        app:layout_constraintStart_toEndOf="@+id/pastry_recycle"
+        app:layout_constraintTop_toBottomOf="@+id/pastry_item_name" />
+
+    <TextView
+        android:id="@+id/pastry_price"
+        android:layout_width="30sp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="96dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pastry_image" />
+
+    <Button
+        android:id="@+id/add_to_cart_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginBottom="1dp"
+        android:text="Make Payment"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pastry_recycle"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/pastry_add"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="236dp"
+        android:text="+"
+        app:layout_constraintBottom_toTopOf="@+id/add_to_cart_3"
+        app:layout_constraintStart_toEndOf="@+id/pastry_quantity" />
+
+    <TextView
+        android:id="@+id/pastry_quantity"
+        android:layout_width="41dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="236dp"
+        android:text="0"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/add_to_cart_3"
+        app:layout_constraintStart_toEndOf="@+id/pastry_minus" />
+
+    <Button
+        android:id="@+id/pastry_minus"
+        android:layout_width="37dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginBottom="236dp"
+        android:text="-"
+        app:layout_constraintBottom_toTopOf="@+id/add_to_cart_3"
+        app:layout_constraintStart_toEndOf="@+id/bear_claw" />
+</androidx.constraintlayout.widget.ConstraintLayout>

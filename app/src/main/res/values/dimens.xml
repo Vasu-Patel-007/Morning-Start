@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    sign in page materials dimenstions-->
+    <dimen name="email_size"> 20sp</dimen>
+    <dimen name="email_margin_top">10sp</dimen>
+    <dimen name="email_edit_text_margin_top"> 10sp</dimen>
+    <dimen name="password_size"> 20sp </dimen>
+    <dimen name="password_margin_top"> 10sp </dimen>
+    <dimen name="password_edit_text_margin_top"> 10sp</dimen>
+    <dimen name="image_margin_top">150sp</dimen>
+    <dimen name="email_edit_text_margin_left">35sp</dimen>
+    <dimen name="password_edit_text_width">260sp</dimen>
+    <dimen name="sign_in_width">140sp</dimen>
+    <dimen name="sign_in_margin_top"> 10sp</dimen>
+    <dimen name="sign_in_margin_left"> 30sp</dimen>
+    <dimen name="sign_up_marginleft"> 30sp</dimen>
+    <dimen name="sign_up_marginTop"> 10sp </dimen>
+
+
+<!--    sign up page materials dimenstions-->
+    <dimen name="sign_up_page_email_size"> 20sp</dimen>
+    <dimen name="sign_up_page_email_margin_top">30sp</dimen>
+    <dimen name="sign_up_page_email_edit_text_margin_top"> 30sp</dimen>
+    <dimen name="sign_up_page_password_size"> 20sp </dimen>
+    <dimen name="sign_up_page_password_margin_top"> 30sp </dimen>
+    <dimen name="sign_up_page_password_edit_text_margin_top"> 30sp</dimen>
+    <dimen name="sign_up_page_image_margin_top">150sp</dimen>
+    <dimen name="sign_up_page_password_edit_text_width">260sp</dimen>
+    <dimen name="sign_up_page_sign_up_marginTop"> 30sp </dimen>
+    <dimen name="sign_up_page_password_margin_left"> 30sp </dimen>
+    <dimen name="sign_up_password_marginleft"> 32sp</dimen>
+    <dimen name="sign_up_email_edit_text_margin_left"> 70sp</dimen>
+
+    <dimen name="log_in_page_image_margin_top_rotate">30sp</dimen>
+    <dimen name="sign_up_page_image_margin_top_rotate">30sp</dimen>
+</resources>
